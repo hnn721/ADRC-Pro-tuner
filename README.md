@@ -14,13 +14,10 @@
  
 
 *Active Disturbance Rejection Control — from plant specification to validated closed loop design in one click*
-The platform was developed by **HANI NARIMENE** ( a control systems engineer ) .
 
-## Contact
+The platform was developed by **HANI NARIMENE** .
 
-**HANI Narimene**  
-📧 hnnarimene@gmail.com
----
+
 
 [Features](#features) · [Installation](#installation) · [Quick Start](#quick-start) · [Modules](#modules) · [Test Cases](#test-cases) · [References](#references) · [Contact](#contact)
 
@@ -289,6 +286,9 @@ Initial conditions:  x(0) = 0,  ẑ(0) = 0  (all zero)
 [4] K. Łakomy et al., "ADRC Toolbox for MATLAB/Simulink," *arXiv:2112.01614*, 2022.
 
 [5] O. Türkcüoğlu, "pyadrc," GitHub, 2021. https://github.com/onguntoglu/pyadrc
+## Contact
+📧 hnnarimene@gmail.com
+---
 
 ---
 
