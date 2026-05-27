@@ -14,7 +14,12 @@
  
 
 *Active Disturbance Rejection Control — from plant specification to validated closed loop design in one click*
+The platform was developed by **HANI NARIMENE** ( a control systems engineer ) .
 
+## Contact
+
+**HANI Narimene**  
+📧 hnnarimene@gmail.com
 ---
 
 [Features](#features) · [Installation](#installation) · [Quick Start](#quick-start) · [Modules](#modules) · [Test Cases](#test-cases) · [References](#references) · [Contact](#contact)
@@ -27,12 +32,7 @@
 
 **ADRC Pro Tuner** is an open source interactive engineering platform for the automatic design, simulation, and analysis of **Active Disturbance Rejection Control (ADRC)** applied to general SISO dynamical systems. It implements the bandwidth parameterised Linear ADRC (LADRC) framework of Gao (2003) and the Nonlinear ADRC (NLADRC) extension of Han (1998) within a unified Python/Streamlit environment.
 
-The platform was developed by HANI NARIMENE .
-
-## Contact
-
-**HANI Narimene**  
-📧 hnnarimene@gmail.com
+ 
 
 ---
 
@@ -65,32 +65,75 @@ The platform was developed by HANI NARIMENE .
 | PID benchmarking | ✅ 8 metrics | ❌ | ❌ |
 | No proprietary software | ✅ Pure Python | ✅ | ❌ Requires MATLAB |
 
+ ## Installation & How to Run
+
+### Step 1 — Install Python 3.12
+
+Download and install Python 3.12 from:  
+👉 https://www.python.org/downloads/
+
+> **Windows users:** during installation, check **"Add Python to PATH"**
+
+Verify:
+```bash
+python --version
+# Expected: Python 3.12.x
+```
+
 ---
 
-## Installation
+### Step 2 — Download the project
 
-### Requirements
+**Option A — Clone with Git:**
+```bash
+git clone https://github.com/hani-narimene/adrc-pro-tuner.git
+cd adrc-pro-tuner
+```
 
-- Python 3.12
-- pip
+**Option B — Download ZIP (no Git needed):**
+- Click the green **"Code"** button on this page
+- Click **"Download ZIP"**
+- Extract the folder
+- Open a terminal inside the extracted folder
 
-### Install dependencies
+---
+
+### Step 3 — Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the application
+This installs: `streamlit`, `numpy`, `scipy`, `matplotlib`  
+Takes 1–2 minutes on first install.
+
+---
+
+### Step 4 — Launch the application
 
 ```bash
 streamlit run app.py
 ```
 
-The application opens automatically at `http://localhost:8501` in your default browser.  
-No network connection or cloud infrastructure is required.
+The browser opens automatically at:
+```
+http://localhost:8501
+```
+
+> If the browser does not open, copy and paste the URL manually.
 
 ---
 
+### Full sequence (copy-paste ready)
+
+```bash
+git clone https://github.com/hani-narimene/adrc-pro-tuner.git
+cd adrc-pro-tuner
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+---
 ## Quick Start
 
 ### 1 — Define your plant
